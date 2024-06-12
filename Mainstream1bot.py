@@ -7,7 +7,7 @@ with open('C:\\Users\\Agyeya\\Desktop\\TB\\Codes\\token.txt','r') as f:
     TOKEN = f.read()
 
 def start(update, context):
-    update.message.reply_text("""send in format- /crypto 'coin name'""")
+    update.message.reply_text("""send in format- /crypto 'Coin name'""")
 
 
 def crypto(update, context):
