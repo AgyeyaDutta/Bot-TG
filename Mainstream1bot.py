@@ -9,7 +9,6 @@ with open('C:\\Users\\Agyeya\\Desktop\\TB\\Codes\\token.txt','r') as f:
 def start(update, context):
     update.message.reply_text("""send in format- /crypto 'Coin name'""")
 
-
 def crypto(update, context):
     ticker = context.args[0]
     data = cryptocompare.get_price(ticker, 'USD')
@@ -24,3 +23,8 @@ dp.add_handler(telegram.ext.CommandHandler("crypto",crypto))
 
 updater.start_polling()
 updater.idle()
+
+
+
+
+not updated
